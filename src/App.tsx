@@ -16,7 +16,8 @@ const App: React.FC = () => {
       {/* 라우트 설정 */}
       <Routes>
         <Route path="/" element={<MainContent />} />
-        <Route path="/login" element={<Login />} />  {/* Login 컴포넌트 사용 */}
+        <Route path="/login" element={<Login />} />  
+        <Route path="/register" element={<Register />} /> 
         {/* 다른 페이지 라우트 설정 */}
       </Routes>
       <Footer />
