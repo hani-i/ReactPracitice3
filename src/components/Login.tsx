@@ -19,7 +19,7 @@ const Login: React.FC = () => {
       <form onSubmit={handleSubmit}>
         <input
           type="email"
-          placeholder="무신사 이메일"
+          placeholder="이메일"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required

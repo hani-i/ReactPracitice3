@@ -1,20 +1,28 @@
 // src/components/Register.tsx
 import React, { useState } from "react";
+import "../styles/Register.css";
 
 const Register: React.FC = () => {
+  const [name, setName] = useState(""); // 이름 상태 추가
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // 여기에 API 호출 추가
-    console.log("회원가입 정보:", { email, password });
+    console.log("회원가입 정보:", { name, email, password });
   };
 
   return (
-    <div>
+    <div className="register-container">
       <h2>회원가입</h2>
       <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="이름" // 이름 입력 필드
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
         <input
           type="email"
           placeholder="이메일"
