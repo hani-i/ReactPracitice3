@@ -3,6 +3,7 @@
   src: url("../font/musinsa-Medium.ttf") format("truetype");
 }
 MainContent.css .main-content {
+  width: 800px;
   padding: 20px;
 }
 .main-content h2 {
