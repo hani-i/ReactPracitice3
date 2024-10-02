@@ -26,7 +26,7 @@ const Header: React.FC = () => {
 
         {/* 사용자 메뉴 */}
         <div className="header__user-menu">
-          <Link to="/login">로그인</Link>
+          <Link to="/Login">로그인</Link>
           <Link to="/register">회원가입</Link>
           <Link to="/cart">장바구니</Link>
         </div>
